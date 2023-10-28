@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-describe("template spec", () => {
+describe("add new computer", () => {
   function getrandomcomputer() {
     const names = [
       "Asus",
@@ -14,7 +14,7 @@ describe("template spec", () => {
     const randomIndex = Math.floor(Math.random() * names.length);
     return names[randomIndex];
   }
-  it("passes", () => {
+  it("should add new computer", () => {
     const randomComputer = getrandomcomputer();
     cy.viewport("macbook-15");
     cy.visit("/");

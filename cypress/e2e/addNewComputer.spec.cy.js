@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
-describe("template spec", () => {
-  it("passes", () => {
+describe("add new computer", () => {
+  it("should add new computer", () => {
     cy.viewport("macbook-15");
     cy.visit("/");
     cy.get("#add").click();

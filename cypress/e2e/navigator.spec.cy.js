@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
-describe("template spec", () => {
-  it("passes", () => {
+describe("navigation", () => {
+  it("navigates through the web..", () => {
     cy.viewport("macbook-15");
     cy.visit("/");
     cy.get("tbody > :nth-child(1) > :nth-child(1) > a").click();
